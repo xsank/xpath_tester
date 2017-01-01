@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <script src="/static/js/ajax.js"></script>
+    <script src="/static/js/initData.js"></script>
+    <title>Html Xpath Tester</title>
+</head>
+<body>
+<div id="header"></div>
+<div id="blank"></div>
+<div id="content">
+    <div id="title">
+        html在线xpath测试
+    </div>
+    <div id="html">
+        <div class="subTitle">
+            原始HTML
+        </div>
+        <span>
+            <textarea name="html" id="rawHtml"></textarea>
+            <div class="roller"></div>
+        </span>
+    </div>
+    <div id="xpath">
+        <div class="subTitle">
+            xpath表达式
+        </div>
+        <span>
+            <input id="xpathString">
+            <button onclick="check()">提交</button>
+        </span>
+    </div>
+    <div id="result">
+        <div class="subTitle">
+            测试结果
+        </div>
+        <span>
+            <textarea name="result" id="resHtml"></textarea>
+            <div class="roller"></div>
+        </span>
+    </div>
+</div>
+</body>
+</html>
